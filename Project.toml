@@ -1,0 +1,6 @@
+[deps]
+KomaNYU = "6ba24435-1b4f-4a37-bd7b-5547d061c7b4"
+KomaNYUBase = "558670ff-cef0-4d9f-b15b-bd345d36ea0a"
+KomaNYUCore = "a4d5918d-f7c8-4203-8706-5b9a82e83504"
+KomaNYUFiles = "8ddc4e30-e12a-441d-8de6-881fa077b415"
+KomaNYUPlots = "9cffba9e-a160-43d8-9293-b8def8c63cbd"
