@@ -34,7 +34,120 @@ Setup Instructions:**
 
 Clone and set up the following repositories:
 
-1. LambdaKoma Repository : https://github.com/erosmontin/lambdakoma
+1. Installation
+    Step 1: Install Julia
+
+On Windows:
+
+    Download Julia from the official website.
+    Run the installer and follow the instructions.
+    After installation, add Julia to your system path:
+        Open the Start menu, search for 'Environment Variables,' and select 'Edit the system environment variables.'
+        Click on 'Environment Variables.'
+        Under 'System variables,' find 'Path,' select it, and click 'Edit.'
+        Click 'New' and add the path where Julia was installed (usually C:\Users\YourUsername\AppData\Local\Programs\Julia-1.x.x\bin).
+        Click 'OK' to close the windows.
+
+On Mac:
+
+    Open the terminal.
+    Install Julia using Homebrew:
+
+    brew install --cask julia
+
+Verify the installation:
+
+    julia --version
+
+On Linux:
+
+    Open the terminal.
+    Download the latest version of Julia:
+
+    wget https://julialang-s3.julialang.org/bin/linux/x64/1.9/julia-1.9.0-linux-x86_64.tar.gz
+
+Extract the downloaded file and move it to /opt:
+
+    tar xzf julia-1.9.0-linux-x86_64.tar.gz
+    sudo mv julia-1.9.0 /opt/
+
+Add Julia to your path:
+
+    sudo ln -s /opt/julia-1.9.0/bin/julia /usr/local/bin/julia
+
+Verify the installation:
+
+    julia --version
+
+Step 2: Install Julia Packages
+Open Julia in the terminal:
+
+    julia
+
+Add the necessary packages:
+
+    using Pkg
+    Pkg.add(["KomaMRI", "FileIO", "JLD2","JSON","NPZ","NIfTI"])
+
+Exit Julia:
+
+    exit()
+
+Step 3: Install Python
+
+On Windows:
+
+    Download and install Python from the official site.
+    During installation, make sure to check the box 'Add Python to PATH.'
+
+On Mac:
+
+    Open the terminal and install Python via Homebrew:
+
+    brew install python
+
+On Linux:
+
+    Open the terminal and run:
+
+    sudo apt update
+    sudo apt install python3 python3-pip
+
+Step 4: Install virtualenv and Create a Python Environment Named camrie
+Open the terminal (or Command Prompt on Windows).
+Install virtualenv if it’s not installed:
+
+    pip install virtualenv
+
+Create a new virtual environment named camrie:
+
+    virtualenv camrie
+
+Step 5: Activate the camrie Environment
+
+On Windows:
+
+    camrie\Scripts\activate
+
+On Mac/Linux:
+
+    source camrie/bin/activate
+
+Step 6: Install Python Packages from requirements.txt
+
+Once the camrie environment is active, install the required Python packages:
+
+    pip install -r requirements.txt
+
+Step 7: Verify Installation
+Ensure that all Julia packages are installed correctly:
+
+    julia
+    using KomaMRI, FileIO, JLD2, JSON,NPZ,NIfTI
+
+Ensure that all Python packages are installed correctly:
+
+    pip list
 
 2. KomaNYU Repository : https://github.com/cloudmrhub/KomaNYU.jl/blob/master/README.md
 
