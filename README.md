@@ -241,4 +241,7 @@ Stage 3 Output:
 TCIA T1, T2, and PD images with applied deformation field.
 
 
+You can download the paitent dataset from here: https://www.cancerimagingarchive.net/collection/brats-africa/
+
+
 
